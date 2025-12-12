@@ -35,11 +35,11 @@ export interface Subscriber {
 }
 
 /**
- * Get the most recent newsletter
+ * Get the most recent newsletter from newsletters_v2
  */
 export async function getLatestNewsletter(): Promise<Newsletter | null> {
   const { data, error } = await getSupabase()
-    .from('newsletters')
+    .from('newsletters_v2')
     .select('*')
     .order('created_at', { ascending: false })
     .limit(1)
@@ -86,11 +86,11 @@ export async function getActiveSubscribers(): Promise<Subscriber[]> {
 }
 
 /**
- * Save a new newsletter to the database
+ * Save a new newsletter to the database (newsletters_v2)
  */
 export async function saveNewsletter(content: string, title: string): Promise<void> {
   const { error } = await getSupabase()
-    .from('newsletters')
+    .from('newsletters_v2')
     .insert({
       content,
       title,
