@@ -4,119 +4,141 @@
  */
 export function getWelcomeEmailHTML(): string {
   return `<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light dark">
-  <meta name="supported-color-schemes" content="light dark">
-  <style>
-    :root {
-      color-scheme: light dark;
-    }
-    @media (prefers-color-scheme: dark) {
-      .email-body {
-        background-color: #0A0A0A !important;
-      }
-      .email-container {
-        background-color: #111111 !important;
-        border-color: #00FF88 !important;
-      }
-      .text-dark {
-        color: #ffffff !important;
-      }
-      .text-muted {
-        color: #888888 !important;
-      }
-      .divider {
-        border-color: #222222 !important;
-      }
-    }
-  </style>
-</head>
-<body class="email-body" style="margin:0;padding:0;background-color:#f5f5f5;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
-  
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f5f5;padding:40px 20px;">
-    <tr>
-      <td align="center">
-        <table class="email-container" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;background-color:#ffffff;border:2px solid #00CC6A;border-radius:12px;overflow:hidden;">
-          
-          <!-- Header -->
-          <tr>
-            <td style="padding:40px 40px 30px;text-align:center;border-bottom:1px solid #eee;" class="divider">
-              <div style="font-size:13px;color:#00CC6A;letter-spacing:3px;font-weight:600;margin-bottom:16px;">■ NICHES HUNTER</div>
-              <h1 class="text-dark" style="margin:0;font-size:28px;font-weight:700;color:#1a1a1a;">Welcome aboard! 🎯</h1>
-            </td>
-          </tr>
-          
-          <!-- Content -->
-          <tr>
-            <td style="padding:30px 40px;">
-              <p class="text-dark" style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#333;">Hey there,</p>
-              
-              <p class="text-dark" style="margin:0 0 24px;font-size:16px;line-height:1.6;color:#333;">
-                You're officially a <strong style="color:#00CC6A;">Niche Hunter</strong>. Every day, you'll get intel that 99% of indie devs don't have access to.
-              </p>
-              
-              <!-- What you get -->
-              <div style="background:linear-gradient(135deg, rgba(0,204,106,0.08) 0%, rgba(0,204,106,0.02) 100%);border-left:4px solid #00CC6A;padding:20px;margin:0 0 24px;border-radius:0 8px 8px 0;">
-                <div style="font-size:12px;color:#00CC6A;font-weight:600;letter-spacing:1px;margin-bottom:12px;">WHAT YOU'LL RECEIVE DAILY</div>
-                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Welcome to Niches Hunter</title>
+  </head>
+  <body style="margin: 0; padding: 0; background-color: #f5f5f7; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',Roboto,sans-serif">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f5f5f7; padding: 40px 16px">
+      <tr>
+        <td align="center">
+          <!-- Main Container -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 560px">
+            <!-- Logo Badge -->
+            <tr>
+              <td style="text-align: center; padding-bottom: 32px">
+                <div style="display: inline-block; background: #111; padding: 10px 20px; border-radius: 100px">
+                  <span style="font-size: 12px; font-weight: 700; color: #00FF88; letter-spacing: 2px">🎯 NICHES HUNTER</span>
+                </div>
+              </td>
+            </tr>
+            <!-- Main Card -->
+            <tr>
+              <td>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 2px 40px rgba(0,0,0,0.08)">
+                  <!-- Header -->
                   <tr>
-                    <td style="padding:6px 0;font-size:15px;" class="text-dark">
-                      <span style="margin-right:10px;">📈</span> 5 trending iOS apps with rankings
+                    <td style="padding: 48px 40px 32px; text-align: center">
+                      <h1 style="margin: 0 0 12px; font-size: 36px; font-weight: 800; color: #111; letter-spacing: -1.5px; line-height: 1.1">You're in 🎉</h1>
+                      <p style="margin: 0; font-size: 17px; color: #00CC6A; font-weight: 600">Welcome to the inner circle</p>
                     </td>
                   </tr>
+                  <!-- Content -->
                   <tr>
-                    <td style="padding:6px 0;font-size:15px;" class="text-dark">
-                      <span style="margin-right:10px;">🌍</span> US vs EU market comparison
+                    <td style="padding: 0 40px 40px">
+                      <!-- Intro -->
+                      <p style="margin: 0 0 32px; font-size: 16px; line-height: 1.8; color: #444; text-align: center">Every day, see opportunities others will discover too late</p>
+                      <!-- Stats Row -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 32px; background: #f8f9fa; border-radius: 16px; overflow: hidden">
+                        <tr>
+                          <td width="33%" style="text-align: center; padding: 24px 8px; border-right: 1px solid #eee">
+                            <div style="font-size: 32px; font-weight: 800; color: #00CC6A; margin-bottom: 4px">3</div>
+                            <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1px; font-weight: 600">Apps/Day</div>
+                          </td>
+                          <td width="33%" style="text-align: center; padding: 24px 8px; border-right: 1px solid #eee">
+                            <div style="font-size: 32px; font-weight: 800; color: #00CC6A; margin-bottom: 4px">2</div>
+                            <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1px; font-weight: 600">Niches</div>
+                          </td>
+                          <td width="33%" style="text-align: center; padding: 24px 8px">
+                            <div style="font-size: 32px; font-weight: 800; color: #00CC6A; margin-bottom: 4px">∞</div>
+                            <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1px; font-weight: 600">Ideas</div>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Features -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 32px">
+                        <tr>
+                          <td style="padding: 14px 16px; background: #f8f9fa; border-radius: 12px; margin-bottom: 8px">
+                            <span style="font-size: 18px; margin-right: 12px">📈</span>
+                            <span style="color: #111; font-size: 15px; font-weight: 600">Trending apps</span>
+                            <span style="color: #888; font-size: 14px"> before Twitter talks about them</span>
+                          </td>
+                        </tr>
+                        <tr><td style="height: 8px"></td></tr>
+                        <tr>
+                          <td style="padding: 14px 16px; background: #f8f9fa; border-radius: 12px">
+                            <span style="font-size: 18px; margin-right: 12px">🌍</span>
+                            <span style="color: #111; font-size: 15px; font-weight: 600">Market Gaps</span>
+                            <span style="color: #888; font-size: 14px"> no one talks about</span>
+                          </td>
+                        </tr>
+                        <tr><td style="height: 8px"></td></tr>
+                        <tr>
+                          <td style="padding: 14px 16px; background: #f8f9fa; border-radius: 12px">
+                            <span style="font-size: 18px; margin-right: 12px">💎</span>
+                            <span style="color: #111; font-size: 15px; font-weight: 600">Niche opportunities</span>
+                            <span style="color: #888; font-size: 14px"> with low hype and real revenue</span>
+                          </td>
+                        </tr>
+                        <tr><td style="height: 8px"></td></tr>
+                        <tr>
+                          <td style="padding: 14px 16px; background: #f8f9fa; border-radius: 12px">
+                            <span style="font-size: 18px; margin-right: 12px">⚡</span>
+                            <span style="color: #111; font-size: 15px; font-weight: 600">Action items</span>
+                            <span style="color: #888; font-size: 14px"> no brainstorming just execution</span>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- CTA -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td style="background: #111; border-radius: 16px; padding: 28px; text-align: center">
+                            <div style="font-size: 12px; color: #00FF88; font-weight: 700; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase">⚡ Your first brief</div>
+                            <div style="font-size: 20px; color: #fff; font-weight: 700">Arriving right now!</div>
+                            <div style="font-size: 13px; color: #666; margin-top: 8px">Check your inbox in a few seconds</div>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
+                  <!-- Tip -->
                   <tr>
-                    <td style="padding:6px 0;font-size:15px;" class="text-dark">
-                      <span style="margin-right:10px;">💎</span> 2-3 niche opportunities with analysis
+                    <td style="padding: 0 40px 40px">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background: #fffbeb; border-radius: 12px; border-left: 4px solid #f59e0b">
+                        <tr>
+                          <td style="padding: 14px 16px">
+                            <span style="font-size: 14px; color: #92400e"><strong>💡</strong> Unlock +1000 Niches which print money</span>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
+                  <!-- Signature -->
                   <tr>
-                    <td style="padding:6px 0;font-size:15px;" class="text-dark">
-                      <span style="margin-right:10px;">🎯</span> Actionable insights you can use today
+                    <td style="padding: 0 40px 40px; text-align: center">
+                      <p style="margin: 0; font-size: 15px; color: #666">Happy hunting 🚀</p>
+                      <p style="margin: 4px 0 0; font-size: 13px; color: #888">Niches Hunter</p>
                     </td>
                   </tr>
                 </table>
-              </div>
-              
-              <!-- CTA Box -->
-              <div style="background:#0A0A0A;border-radius:8px;padding:24px;text-align:center;margin:0 0 24px;">
-                <div style="font-size:14px;color:#00FF88;margin-bottom:8px;">⚡ YOUR FIRST BRIEF</div>
-                <div style="font-size:20px;color:#fff;font-weight:600;">Arriving in your inbox now</div>
-              </div>
-              
-              <p class="text-muted" style="margin:0 0 24px;font-size:14px;line-height:1.6;color:#666;">
-                Check your inbox (and spam folder, just in case). If you have questions, just reply to this email — we read everything.
-              </p>
-              
-              <p class="text-dark" style="margin:0;font-size:16px;line-height:1.6;color:#333;">
-                Happy hunting! 🚀<br>
-                <strong>— The Niches Hunter Team</strong>
-              </p>
-            </td>
-          </tr>
-          
-          <!-- Footer -->
-          <tr>
-            <td style="padding:24px 40px;background:#fafafa;border-top:1px solid #eee;text-align:center;" class="divider">
-              <p style="margin:0;font-size:12px;color:#999;">
-                <a href="https://nicheshunter.app" style="color:#00CC6A;text-decoration:none;">nicheshunter.app</a>
-              </p>
-            </td>
-          </tr>
-          
-        </table>
-      </td>
-    </tr>
-  </table>
-  
-</body>
+              </td>
+            </tr>
+            <!-- Footer -->
+            <tr>
+              <td style="text-align: center; padding: 32px 16px">
+                <a href="https://niches-hunter.vercel.app" style="color: #00CC6A; text-decoration: none; font-size: 13px; font-weight: 600">nicheshunter.app</a>
+                <p style="margin: 12px 0 0; font-size: 11px; color: #999">You signed up for Niches Hunter. Smart move.</p>
+                <p style="margin: 16px 0 0;">
+                  <a href="https://nicheshunter.app/unsubscribe" style="color: #888; text-decoration: underline; font-size: 11px;">Unsubscribe</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>`;
 }
-
