@@ -59,35 +59,71 @@ export function getWelcomeEmailHTML(): string {
                       </table>
                       <!-- Features -->
                       <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 32px">
+                        <!-- Feature 1 -->
                         <tr>
-                          <td style="padding: 14px 16px; background: #f8f9fa; border-radius: 12px; margin-bottom: 8px">
-                            <span style="font-size: 18px; margin-right: 12px">📈</span>
-                            <span style="color: #111; font-size: 15px; font-weight: 600">Trending apps</span>
-                            <span style="color: #888; font-size: 14px"> before Twitter talks about them</span>
+                          <td style="background: #f8f9fa; border-radius: 12px; padding: 0;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td width="50" style="padding: 16px; vertical-align: middle; text-align: center;">
+                                  <span style="font-size: 22px;">📈</span>
+                                </td>
+                                <td style="padding: 16px 16px 16px 0; vertical-align: middle;">
+                                  <span style="color: #111; font-size: 15px; font-weight: 600;">Trending apps</span><br>
+                                  <span style="color: #888; font-size: 14px;">before Twitter talks about them</span>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                         <tr><td style="height: 8px"></td></tr>
+                        <!-- Feature 2 -->
                         <tr>
-                          <td style="padding: 14px 16px; background: #f8f9fa; border-radius: 12px">
-                            <span style="font-size: 18px; margin-right: 12px">🌍</span>
-                            <span style="color: #111; font-size: 15px; font-weight: 600">Market Gaps</span>
-                            <span style="color: #888; font-size: 14px"> no one talks about</span>
+                          <td style="background: #f8f9fa; border-radius: 12px; padding: 0;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td width="50" style="padding: 16px; vertical-align: middle; text-align: center;">
+                                  <span style="font-size: 22px;">🌍</span>
+                                </td>
+                                <td style="padding: 16px 16px 16px 0; vertical-align: middle;">
+                                  <span style="color: #111; font-size: 15px; font-weight: 600;">Market Gaps</span><br>
+                                  <span style="color: #888; font-size: 14px;">no one talks about</span>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                         <tr><td style="height: 8px"></td></tr>
+                        <!-- Feature 3 -->
                         <tr>
-                          <td style="padding: 14px 16px; background: #f8f9fa; border-radius: 12px">
-                            <span style="font-size: 18px; margin-right: 12px">💎</span>
-                            <span style="color: #111; font-size: 15px; font-weight: 600">Niche opportunities</span>
-                            <span style="color: #888; font-size: 14px"> with low hype and real revenue</span>
+                          <td style="background: #f8f9fa; border-radius: 12px; padding: 0;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td width="50" style="padding: 16px; vertical-align: middle; text-align: center;">
+                                  <span style="font-size: 22px;">💎</span>
+                                </td>
+                                <td style="padding: 16px 16px 16px 0; vertical-align: middle;">
+                                  <span style="color: #111; font-size: 15px; font-weight: 600;">Niche opportunities</span><br>
+                                  <span style="color: #888; font-size: 14px;">with low hype and real revenue</span>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                         <tr><td style="height: 8px"></td></tr>
+                        <!-- Feature 4 -->
                         <tr>
-                          <td style="padding: 14px 16px; background: #f8f9fa; border-radius: 12px">
-                            <span style="font-size: 18px; margin-right: 12px">⚡</span>
-                            <span style="color: #111; font-size: 15px; font-weight: 600">Action items</span>
-                            <span style="color: #888; font-size: 14px"> no brainstorming just execution</span>
+                          <td style="background: #f8f9fa; border-radius: 12px; padding: 0;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td width="50" style="padding: 16px; vertical-align: middle; text-align: center;">
+                                  <span style="font-size: 22px;">⚡</span>
+                                </td>
+                                <td style="padding: 16px 16px 16px 0; vertical-align: middle;">
+                                  <span style="color: #111; font-size: 15px; font-weight: 600;">Action items</span><br>
+                                  <span style="color: #888; font-size: 14px;">no brainstorming just execution</span>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                       </table>
