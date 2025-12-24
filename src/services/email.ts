@@ -15,7 +15,7 @@ function getResendClient(): Resend {
   return resend;
 }
 
-const FROM_EMAIL = process.env.EMAIL_FROM || 'support@arianeconcept.fr';
+const FROM_EMAIL = 'Niches Hunter <support@arianeconcept.fr>';
 
 /**
  * Send welcome email to new subscriber
