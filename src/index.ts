@@ -25,10 +25,21 @@ app.get('/health', (req, res) => {
 // Routes
 app.use('/webhook', webhookRouter);
 
-// Start server
-app.listen(PORT, () => {
+// Graceful shutdown handling
+process.on('SIGTERM', () => {
+  console.log('⚠️ SIGTERM received, shutting down gracefully...');
+  process.exit(0);
+});
+
+process.on('SIGINT', () => {
+  console.log('⚠️ SIGINT received, shutting down gracefully...');
+  process.exit(0);
+});
+
+// Start server - bind to 0.0.0.0 for Railway/Docker compatibility
+app.listen(Number(PORT), '0.0.0.0', () => {
   console.log(`🚀 Niches Hunter API running on port ${PORT}`);
-  console.log(`📍 Health check: http://localhost:${PORT}/health`);
-  console.log(`📍 Webhook: POST http://localhost:${PORT}/webhook/subscribe`);
+  console.log(`📍 Health check: http://0.0.0.0:${PORT}/health`);
+  console.log(`📍 Webhook: POST http://0.0.0.0:${PORT}/webhook/subscribe`);
 });
 
