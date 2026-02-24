@@ -15,7 +15,8 @@ function getResendClient(): Resend {
   return resend;
 }
 
-const FROM_EMAIL = 'Niches Hunter <support@arianeconcept.fr>';
+const FROM_EMAIL = 'Niches Hunter <hello@nicheshunter.app>';
+const REPLY_TO = 'contact@nicheshunter.app';
 
 /**
  * Send welcome email to new subscriber
@@ -26,6 +27,7 @@ export async function sendWelcomeEmail(toEmail: string): Promise<void> {
   const { error } = await getResendClient().emails.send({
     from: FROM_EMAIL,
     to: toEmail,
+    reply_to: REPLY_TO,
     subject: 'Welcome to Niches Hunter 🎯',
     html: html
   });
@@ -52,6 +54,7 @@ export async function sendNewsletter(
   const { error } = await getResendClient().emails.send({
     from: FROM_EMAIL,
     to: toEmail,
+    reply_to: REPLY_TO,
     subject: subject,
     html: htmlContent
   });
@@ -88,6 +91,7 @@ export async function sendNewsletterBatch(
         await getResendClient().emails.send({
           from: FROM_EMAIL,
           to: email,
+          reply_to: REPLY_TO,
           subject: subject,
           html: htmlContent
         });
